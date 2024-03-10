@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Phest\Tests\Unit;
+namespace Ghostwriter\PhestTests\Unit;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProviderExternal;
+use Ghostwriter\Phest\Calculator;
+use Ghostwriter\PhestTests\DataProvider\CalculatorDataProvider;
 
 #[CoversClass(Calculator::class)]
 final class CalculatorTest extends AbstractPhestTestCase
@@ -16,23 +18,5 @@ final class CalculatorTest extends AbstractPhestTestCase
         $calculator = new Calculator();
 
         self::assertSame($calculator->add($left, $right), $calculator->add($right, $left));
-    }
-}
-
-final class Calculator
-{
-    public function add(int $left, int $right): int
-    {
-        return $left + $right;
-    }
-}
-
-final class CalculatorDataProvider
-{
-    public static function provide(): iterable
-    {
-        yield [1, 2];
-        yield [2, 3];
-        yield [3, 4];
     }
 }
