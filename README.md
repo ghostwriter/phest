@@ -1,15 +1,15 @@
-# Wip
+# Phest
 
-[![Compliance](https://github.com/ghostwriter/wip/actions/workflows/compliance.yml/badge.svg)](https://github.com/ghostwriter/wip/actions/workflows/compliance.yml)
-[![Supported PHP Version](https://badgen.net/packagist/php/ghostwriter/wip?color=8892bf)](https://www.php.net/supported-versions)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/ghostwriter?label=Sponsor+@ghostwriter/wip&logo=GitHub+Sponsors)](https://github.com/sponsors/ghostwriter)
-[![Code Coverage](https://codecov.io/gh/ghostwriter/wip/branch/main/graph/badge.svg)](https://codecov.io/gh/ghostwriter/wip)
-[![Type Coverage](https://shepherd.dev/github/ghostwriter/wip/coverage.svg)](https://shepherd.dev/github/ghostwriter/wip)
-[![Psalm Level](https://shepherd.dev/github/ghostwriter/wip/level.svg)](https://psalm.dev/docs/running_psalm/error_levels)
-[![Latest Version on Packagist](https://badgen.net/packagist/v/ghostwriter/wip)](https://packagist.org/packages/ghostwriter/wip)
-[![Downloads](https://badgen.net/packagist/dt/ghostwriter/wip?color=blue)](https://packagist.org/packages/ghostwriter/wip)
+[![Compliance](https://github.com/ghostwriter/phest/actions/workflows/compliance.yml/badge.svg)](https://github.com/ghostwriter/phest/actions/workflows/compliance.yml)
+[![Supported PHP Version](https://badgen.net/packagist/php/ghostwriter/phest?color=8892bf)](https://www.php.net/supported-versions)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/ghostwriter?label=Sponsor+@ghostwriter/phest&logo=GitHub+Sponsors)](https://github.com/sponsors/ghostwriter)
+[![Code Coverage](https://codecov.io/gh/ghostwriter/phest/branch/main/graph/badge.svg)](https://codecov.io/gh/ghostwriter/phest)
+[![Type Coverage](https://shepherd.dev/github/ghostwriter/phest/coverage.svg)](https://shepherd.dev/github/ghostwriter/phest)
+[![Psalm Level](https://shepherd.dev/github/ghostwriter/phest/level.svg)](https://psalm.dev/docs/running_psalm/error_levels)
+[![Latest Version on Packagist](https://badgen.net/packagist/v/ghostwriter/phest)](https://packagist.org/packages/ghostwriter/phest)
+[![Downloads](https://badgen.net/packagist/dt/ghostwriter/phest?color=blue)](https://packagist.org/packages/ghostwriter/phest)
 
-work in progress
+A Property-Based Testing Framework for PHP.
 
 > [!WARNING]
 >
@@ -20,7 +20,7 @@ work in progress
 You can install the package via composer:
 
 ``` bash
-composer require ghostwriter/wip
+composer require ghostwriter/phest --dev
 ```
 
 ### Star ⭐️ this repo if you find it useful
@@ -36,7 +36,7 @@ You can also star (🌟) this repo to find it easier later.
 ### Credits
 
 - [Nathanael Esayeas](https://github.com/ghostwriter)
-- [All Contributors](https://github.com/ghostwriter/wip/contributors)
+- [All Contributors](https://github.com/ghostwriter/phest/contributors)
 
 ### Changelog
 
