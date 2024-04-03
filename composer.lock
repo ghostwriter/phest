@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2774f2fa0936b689826e0ea280102fb2",
+    "content-hash": "51348d913f52b843505fdab770346bbc",
     "packages": [
         {
             "name": "ghostwriter/case-converter",
@@ -141,24 +141,24 @@
         },
         {
             "name": "ghostwriter/collection",
-            "version": "1.4.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/collection.git",
-                "reference": "489a8a81ba84a8e58900d11477a1604387927bb8"
+                "reference": "5599d0f8bbae28fe444bd8d72f328db39b9c5831"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/collection/zipball/489a8a81ba84a8e58900d11477a1604387927bb8",
-                "reference": "489a8a81ba84a8e58900d11477a1604387927bb8",
+                "url": "https://api.github.com/repos/ghostwriter/collection/zipball/5599d0f8bbae28fe444bd8d72f328db39b9c5831",
+                "reference": "5599d0f8bbae28fe444bd8d72f328db39b9c5831",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.3"
             },
             "require-dev": {
                 "ghostwriter/coding-standard": "dev-main",
-                "ghostwriter/psalm-plugin": "^0.1 || ^0.2 || ^1.0"
+                "ghostwriter/psalm-plugin": ">=0.2"
             },
             "type": "library",
             "autoload": {
@@ -197,7 +197,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-23T11:06:51+00:00"
+            "time": "2024-02-22T20:29:16+00:00"
         },
         {
             "name": "ghostwriter/config",
