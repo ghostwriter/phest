@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.23.0@005e3184fb6de4350a873b9b8c4dc3cede9db762"/>
+<files psalm-version="5.23.1@8471a896ccea3526b26d082f4461eeea467f10a4">
+  <file src="tests/DataProvider/CalculatorDataProvider.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[provide]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="tests/Unit/AbstractPhestTestCase.php">
+    <MissingOverrideAttribute>
+      <code><![CDATA[protected function assertPostConditions(): void]]></code>
+      <code><![CDATA[protected function assertPreConditions(): void]]></code>
+      <code><![CDATA[protected function setUp(): void]]></code>
+      <code><![CDATA[protected function tearDown(): void]]></code>
+      <code><![CDATA[public static function setUpBeforeClass(): void]]></code>
+      <code><![CDATA[public static function tearDownAfterClass(): void]]></code>
+    </MissingOverrideAttribute>
+  </file>
+</files>
