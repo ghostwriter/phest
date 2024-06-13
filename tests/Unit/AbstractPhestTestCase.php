@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\PhestTests\Unit;
+namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
