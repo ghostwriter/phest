@@ -1,2 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.24.0@462c80e31c34e58cc4f750c656be3927e80e550e"/>
+<files psalm-version="5.24.0@462c80e31c34e58cc4f750c656be3927e80e550e">
+  <file src="src/Attribute/BoolGenerator.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[__construct]]></code>
+    </PossiblyUnusedMethod>
+    <PossiblyUnusedProperty>
+      <code><![CDATA[$value]]></code>
+    </PossiblyUnusedProperty>
+  </file>
+  <file src="src/Calculator.php">
+    <InvalidOperand>
+      <code><![CDATA[$left + $right]]></code>
+      <code><![CDATA[$left - $right]]></code>
+    </InvalidOperand>
+  </file>
+  <file src="tests/DataProvider/CalculatorDataProvider.php">
+    <ArgumentTypeCoercion>
+      <code><![CDATA[$instance->length]]></code>
+    </ArgumentTypeCoercion>
+    <InvalidReturnType>
+      <code><![CDATA[iterable<array<int>>]]></code>
+    </InvalidReturnType>
+    <MixedArgument>
+      <code><![CDATA[$testMethodName]]></code>
+      <code><![CDATA[$testMethodName]]></code>
+    </MixedArgument>
+    <MixedAssignment>
+      <code><![CDATA[$data[$i]]]></code>
+    </MixedAssignment>
+    <PossiblyNullArgument>
+      <code><![CDATA[$testMethodName]]></code>
+      <code><![CDATA[$testMethodName]]></code>
+    </PossiblyNullArgument>
+    <PossiblyNullArrayAccess>
+      <code><![CDATA[$testMethodName]]></code>
+    </PossiblyNullArrayAccess>
+    <PossiblyUndefinedArrayOffset>
+      <code><![CDATA[$backtrace[3]['args']]]></code>
+      <code><![CDATA[$testReflectionClass]]></code>
+    </PossiblyUndefinedArrayOffset>
+    <PossiblyUndefinedIntArrayOffset>
+      <code><![CDATA[$backtrace[3]]]></code>
+      <code><![CDATA[$testMethodName]]></code>
+    </PossiblyUndefinedIntArrayOffset>
+  </file>
+  <file src="tests/Unit/CalculatorTest.php">
+    <RedundantCondition>
+      <code><![CDATA[assertIsString]]></code>
+      <code><![CDATA[assertIsString]]></code>
+      <code><![CDATA[assertIsString]]></code>
+    </RedundantCondition>
+  </file>
+</files>
