@@ -7,8 +7,13 @@ namespace Ghostwriter\Phest;
 /** @see CalculatorTest */
 final class Calculator
 {
-    public function add(int $left, int $right): int
+    public function add(float|int $left, float|int $right): float|int
     {
         return $left + $right;
+    }
+
+    public function subtract(float|int $left, float|int $right): float|int
+    {
+        return $left - $right;
     }
 }
