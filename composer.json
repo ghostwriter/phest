@@ -43,7 +43,8 @@
         "ghostwriter/result": "^1.3.0"
     },
     "require-dev": {
-        "ghostwriter/coding-standard": "dev-main"
+        "ghostwriter/coding-standard": "dev-main",
+        "mockery/mockery": "^1.6.12"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
