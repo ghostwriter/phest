@@ -10,6 +10,9 @@ use Ghostwriter\Container\Container;
 use Ghostwriter\Phest\ServiceProvider;
 use Throwable;
 
+use const PHP_EOL;
+use const STDERR;
+
 use function dirname;
 use function error_reporting;
 use function file_exists;
@@ -18,9 +21,6 @@ use function ini_set;
 use function restore_error_handler;
 use function set_error_handler;
 use function sprintf;
-
-use const PHP_EOL;
-use const STDERR;
 
 /** @var ?string $_composer_autoload_path */
 (static function (string $composerAutoloadPath): void {
