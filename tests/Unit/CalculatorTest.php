@@ -35,16 +35,13 @@ final class CalculatorTest extends AbstractPhestTestCase
     }
 
     #[DataProviderExternal(CalculatorDataProvider::class, 'provideData')]
-    public function testAddIsCommutative(#[IntGenerator] int $left, #[IntGenerator(0, 999)] int $right): void
+    public function testAddIsCommutative(#[FloatGenerator] float $left, #[FloatGenerator(0, 9.99)] float $right): void
     {
         $calculator = new Calculator();
 
         self::assertSame($calculator->add($left, $right), $calculator->add($right, $left));
     }
 
-    /**
-     * @ignore PhpCsFixer\Fixer\Alias\MbStrFunctionsFixer
-     */
     #[DataProviderExternal(CalculatorDataProvider::class, 'provideData')]
     public function testString(
         #[StringGenerator(length: 1)]
