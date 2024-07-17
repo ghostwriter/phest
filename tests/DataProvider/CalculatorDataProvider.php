@@ -30,8 +30,8 @@ final readonly class CalculatorDataProvider
      */
     public static function provideData(): iterable
     {
-        $engine = new Mt19937();
-        $randomizer = new Randomizer($engine);
+        $mt19937 = new Mt19937();
+        $randomizer = new Randomizer($mt19937);
         $backtrace = debug_backtrace(0, 4);
 
         [$testReflectionClass, $testMethodName] = $backtrace[3]['args'];
@@ -39,8 +39,8 @@ final readonly class CalculatorDataProvider
             throw new FailedToDetermineTestClassException($testMethodName);
         }
 
-        $testMethod = $testReflectionClass->getMethod($testMethodName);
-        $parameters = $testMethod->getParameters();
+        $reflectionMethod = $testReflectionClass->getMethod($testMethodName);
+        $parameters = $reflectionMethod->getParameters();
         $totalParameters = count($parameters);
         $data = array_fill(0, $totalParameters, null);
 
@@ -66,6 +66,7 @@ final readonly class CalculatorDataProvider
                 };
                 continue 2;
             }
+
             // TODO: If we want to build and pass objects by type hints to the test method parameters, we can do so here.
             // $typeHint = $parameter->getType()?->getName() ?? '';
         }
