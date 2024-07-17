@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
+use Override;
 use PHPUnit\Framework\TestCase;
 
 abstract class AbstractPhestTestCase extends TestCase
@@ -11,6 +12,7 @@ abstract class AbstractPhestTestCase extends TestCase
     /**
      * This method is called before the first test of this test class is run.
      */
+    #[Override]
     public static function setUpBeforeClass(): void
     {
         parent::setUpBeforeClass();
@@ -19,6 +21,7 @@ abstract class AbstractPhestTestCase extends TestCase
     /**
      * This method is called after the last test of this test class is run.
      */
+    #[Override]
     public static function tearDownAfterClass(): void
     {
         parent::tearDownAfterClass();
@@ -27,6 +30,7 @@ abstract class AbstractPhestTestCase extends TestCase
     /**
      * This method is called before each test.
      */
+    #[Override]
     protected function setUp(): void
     {
         parent::setUp();
@@ -37,6 +41,7 @@ abstract class AbstractPhestTestCase extends TestCase
      *
      * This method is called between setUp() and test.
      */
+    #[Override]
     protected function assertPreConditions(): void
     {
         parent::assertPreConditions();
@@ -47,6 +52,7 @@ abstract class AbstractPhestTestCase extends TestCase
      *
      * This method is called between test and tearDown().
      */
+    #[Override]
     protected function assertPostConditions(): void
     {
         parent::assertPostConditions();
@@ -55,6 +61,7 @@ abstract class AbstractPhestTestCase extends TestCase
     /**
      * This method is called after each test.
      */
+    #[Override]
     protected function tearDown(): void
     {
         parent::tearDown();
