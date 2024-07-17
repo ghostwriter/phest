@@ -59,12 +59,12 @@ use function sprintf;
         $exitCode = $container->get(Application::class)->run();
 
         exit($exitCode);
-    } catch (Throwable $exception) {
+    } catch (Throwable $throwable) {
         fwrite(STDERR, sprintf(
             '[%s] %s: ' . PHP_EOL . '%s' . PHP_EOL,
-            $exception::class,
-            $exception->getMessage(),
-            $exception->getTraceAsString()
+            $throwable::class,
+            $throwable->getMessage(),
+            $throwable->getTraceAsString()
         ));
     } finally {
         restore_error_handler();
